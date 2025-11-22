@@ -219,11 +219,22 @@
         }
 
         /* --- SKILLS SECTION --- */
+        .skills-category {
+            margin-bottom: 3rem;
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+        }
+
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-            margin-top: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 1.5rem;
         }
 
         .skill-card {
@@ -496,50 +507,64 @@
             <h2 class="section-title">Technical Arsenal</h2>
             <p class="section-subtitle">Tools and technologies I use to bring apps to life.</p>
 
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fa-solid fa-mobile-screen"></i>
-                    <h4>Mobile Development</h4>
+            <div class="skills-category">
+                <h3 class="category-title">Android</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <h4>Mobile Development</h4>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"
+                            style="width: 2rem; height: 2rem; fill: var(--accent); margin-bottom: 10px;">
+                            <path d="M1.3 24l11.3-11.5L24 24zM0 0h12L0 12.5zM13.4 0L0 14v10l12-12L24 0z" />
+                        </svg>
+                        <h4>Kotlin</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h4>Jetpack Compose</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-database"></i>
+                        <h4>Room / SQL</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h4>Clean Architecture</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <h4>MVVM</h4>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <svg viewBox="0 0 24 24"
-                        style="width: 2rem; height: 2rem; fill: var(--accent); margin-bottom: 10px;">
-                        <path d="M1.3 24l11.3-11.5L24 24zM0 0h12L0 12.5zM13.4 0L0 14v10l12-12L24 0z" />
-                    </svg>
-                    <h4>Kotlin</h4>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-layer-group"></i>
-                    <h4>Jetpack Compose</h4>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-database"></i>
-                    <h4>Room / SQL</h4>
-                </div>
+            </div>
 
-                <div class="skill-card">
-                    <i class="fa-brands fa-git-alt"></i>
-                    <h4>Git & CI/CD</h4>
+            <div class="skills-category">
+                <h3 class="category-title">iOS</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-swift"></i>
+                        <h4>Swift</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-cubes"></i>
+                        <h4>The Composable Architecture</h4>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fa-brands fa-swift"></i>
-                    <h4>Swift</h4>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-cubes"></i>
-                    <h4>The Composable Architecture</h4>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-circle-play"></i>
-                    <h4>GitHub Actions</h4>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-layer-group"></i>
-                    <h4>Clean Architecture</h4>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-arrows-rotate"></i>
-                    <h4>MVVM</h4>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="category-title">Other Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <h4>Git & CI/CD</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <h4>GitHub Actions</h4>
+                    </div>
                 </div>
             </div>
         </div>
