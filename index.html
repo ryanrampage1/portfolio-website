@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan Casler | Android Engineer</title>
+    <title>Ryan Casler | Software Engineer</title>
     <meta name="description"
-        content="Portfolio of Ryan Casler, an Android Engineer specializing in Kotlin, Jetpack Compose, and mobile architecture.">
+        content="Portfolio of Ryan Casler, a Software Engineer specializing in mobile development, web technologies, and scalable architecture.">
 
     <!-- Fonts: Inter for UI -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -233,6 +233,12 @@
             text-align: center;
             border: 1px solid var(--border);
             transition: 0.2s;
+            /* Ensure consistent height and centering */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         .skill-card:hover {
@@ -456,7 +462,7 @@
         <div class="container">
             <nav>
                 <a href="#" class="logo">
-                    <i class="fa-brands fa-android"></i> Ryan Casler
+                    <i class="fa-solid fa-terminal"></i> Ryan Casler
                 </a>
                 <div class="nav-links">
                     <a href="#about">About</a>
@@ -474,12 +480,12 @@
     <!-- HERO SECTION -->
     <section class="hero">
         <div class="container hero-content">
-            <h1>Building polished,<br>native <span>Android</span> experiences.</h1>
-            <p>I am an Android Engineer focused on clean architecture, modern UI with Jetpack Compose, and robust
+            <h1>Building polished,<br>scalable <span>Software</span> solutions.</h1>
+            <p>I am a Software Engineer focused on clean architecture, modern mobile & web experiences, and robust
                 performance.</p>
             <div>
                 <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="https://github.com/ryancasler" target="_blank" class="btn btn-outline">GitHub Profile</a>
+                <a href="https://github.com/ryanrampage1" target="_blank" class="btn btn-outline">GitHub Profile</a>
             </div>
         </div>
     </section>
@@ -492,11 +498,14 @@
 
             <div class="skills-grid">
                 <div class="skill-card">
-                    <i class="fa-brands fa-android"></i>
-                    <h4>Android SDK</h4>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h4>Mobile Development</h4>
                 </div>
                 <div class="skill-card">
-                    <i class="fa-solid fa-code"></i>
+                    <svg viewBox="0 0 24 24"
+                        style="width: 2rem; height: 2rem; fill: var(--accent); margin-bottom: 10px;">
+                        <path d="M1.3 24l11.3-11.5L24 24zM0 0h12L0 12.5zM13.4 0L0 14v10l12-12L24 0z" />
+                    </svg>
                     <h4>Kotlin</h4>
                 </div>
                 <div class="skill-card">
@@ -507,13 +516,30 @@
                     <i class="fa-solid fa-database"></i>
                     <h4>Room / SQL</h4>
                 </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-cloud-arrow-down"></i>
-                    <h4>Retrofit / APIs</h4>
-                </div>
+
                 <div class="skill-card">
                     <i class="fa-brands fa-git-alt"></i>
                     <h4>Git & CI/CD</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-brands fa-swift"></i>
+                    <h4>Swift</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-cubes"></i>
+                    <h4>The Composable Architecture</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <h4>GitHub Actions</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h4>Clean Architecture</h4>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <h4>MVVM</h4>
                 </div>
             </div>
         </div>
@@ -531,31 +557,25 @@
                 <article class="project-card">
                     <div class="card-image-wrapper">
                         <!-- REPLACE THIS URL with your actual app screenshot -->
-                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800"
-                            alt="Fitness App Screenshot">
+                        <img src="assets/images/taylor_moton_hero.png" alt="Taylor Moton Website">
                     </div>
                     <div class="card-content">
                         <div class="project-header">
-                            <h3 class="project-title">FitTrack Pro</h3>
-                            <span class="project-type">Personal</span>
+                            <h3 class="project-title">Taylor Moton</h3>
+                            <span class="project-type">Web</span>
                         </div>
                         <p class="project-desc">
-                            A comprehensive workout tracking application built entirely with Jetpack Compose. Features
-                            include offline-first architecture using Room, custom graph rendering for progress
-                            visualization, and background services for timer management.
+                            Official website for NFL player Taylor Moton. Built to showcase his career stats, community
+                            involvement, and personal brand with a modern, responsive design.
                         </p>
                         <div class="tech-stack">
-                            <span class="tech-tag">Kotlin</span>
-                            <span class="tech-tag">Jetpack Compose</span>
-                            <span class="tech-tag">Hilt</span>
-                            <span class="tech-tag">Coroutines</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive Design</span>
                         </div>
                         <div class="card-links">
-                            <a href="#" class="card-btn btn-demo">
-                                <i class="fa-brands fa-google-play"></i> Play Store
-                            </a>
-                            <a href="#" class="card-btn btn-code">
-                                <i class="fa-brands fa-github"></i> Code
+                            <a href="https://taylormoton.com" class="card-btn btn-demo" target="_blank">
+                                <i class="fa-solid fa-globe"></i> Visit Site
                             </a>
                         </div>
                     </div>
@@ -566,59 +586,114 @@
                 <article class="project-card">
                     <div class="card-image-wrapper">
                         <!-- REPLACE THIS URL with your actual app screenshot -->
-                        <img src="https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&q=80&w=800"
-                            alt="Weather App Screenshot">
+                        <img src="assets/images/soft_goods_hero.png" alt="Soft Goods Detroit Website">
                     </div>
                     <div class="card-content">
                         <div class="project-header">
-                            <h3 class="project-title">Atmosphere</h3>
-                            <span class="project-type">Open Source</span>
+                            <h3 class="project-title">Soft Goods Manufacturing</h3>
+                            <span class="project-type">Web</span>
                         </div>
                         <p class="project-desc">
-                            A minimalist weather application focusing on hyper-local data. Implements Clean Architecture
-                            principles (MVVM) and handles complex state management for real-time weather alerts.
+                            Contributed to the frontend styling and visual identity during the company's rebrand to Soft
+                            Goods Manufacturing.
                         </p>
                         <div class="tech-stack">
-                            <span class="tech-tag">Android View System</span>
-                            <span class="tech-tag">Retrofit</span>
-                            <span class="tech-tag">Flow</span>
-                            <span class="tech-tag">Material 3</span>
+                            <span class="tech-tag">Web Development</span>
+                            <span class="tech-tag">E-commerce</span>
+                            <span class="tech-tag">Design</span>
                         </div>
                         <div class="card-links">
-                            <a href="#" class="card-btn btn-demo">
-                                <i class="fa-solid fa-mobile-screen"></i> Demo
-                            </a>
-                            <a href="#" class="card-btn btn-code">
-                                <i class="fa-brands fa-github"></i> Code
+                            <a href="https://softgoodsmfg.com/" class="card-btn btn-demo" target="_blank">
+                                <i class="fa-solid fa-globe"></i> Visit Site
                             </a>
                         </div>
                     </div>
                 </article>
                 <!-- PROJECT CARD END -->
 
-                <!-- PROJECT CARD START (Example of how to add a 3rd) -->
+                <!-- PROJECT CARD START -->
                 <article class="project-card">
                     <div class="card-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1616077168712-fc6c788cd4ee?auto=format&fit=crop&q=80&w=800"
-                            alt="Crypto App">
+                        <img src="assets/images/batchlight_hero.png" alt="Batchlight Library">
                     </div>
                     <div class="card-content">
                         <div class="project-header">
-                            <h3 class="project-title">CryptoWatch</h3>
-                            <span class="project-type">Freelance</span>
+                            <h3 class="project-title">Batchlight</h3>
+                            <span class="project-type">Library</span>
                         </div>
                         <p class="project-desc">
-                            Real-time cryptocurrency dashboard handling WebSocket connections for live price updates.
-                            Optimized for low-latency and high-frequency UI updates.
+                            A Kotlin library for efficient batch inserting into SQLite on Android. Designed to improve
+                            performance for large data operations.
                         </p>
                         <div class="tech-stack">
                             <span class="tech-tag">Kotlin</span>
-                            <span class="tech-tag">WebSockets</span>
-                            <span class="tech-tag">MPAndroidChart</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Android</span>
                         </div>
                         <div class="card-links">
-                            <a href="#" class="card-btn btn-code">
-                                <i class="fa-brands fa-github"></i> View Repo
+                            <a href="https://github.com/ryanrampage1/Batchlight" class="card-btn btn-code"
+                                target="_blank">
+                                <i class="fa-brands fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- PROJECT CARD END -->
+
+                <!-- PROJECT CARD START -->
+                <article class="project-card">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?auto=format&fit=crop&q=80&w=800"
+                            alt="Tovala Android App">
+                    </div>
+                    <div class="card-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Tovala Android</h3>
+                            <span class="project-type">Mobile</span>
+                        </div>
+                        <p class="project-desc">
+                            The companion app for the Tovala Smart Oven. Order meals, control the oven, and get
+                            notifications for a seamless cooking experience.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Android</span>
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">IoT</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.tovala.app"
+                                class="card-btn btn-demo" target="_blank">
+                                <i class="fa-brands fa-google-play"></i> Play Store
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- PROJECT CARD END -->
+
+                <!-- PROJECT CARD START -->
+                <article class="project-card">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80&w=800"
+                            alt="Tovala iOS App">
+                    </div>
+                    <div class="card-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Tovala iOS</h3>
+                            <span class="project-type">Mobile</span>
+                        </div>
+                        <p class="project-desc">
+                            Control your Tovala Smart Oven from your iPhone. Features meal ordering, cooking
+                            notifications, and smart kitchen integration.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">iOS</span>
+                            <span class="tech-tag">Swift</span>
+                            <span class="tech-tag">IoT</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://apps.apple.com/us/app/tovala/id1061401391" class="card-btn btn-demo"
+                                target="_blank">
+                                <i class="fa-brands fa-app-store"></i> App Store
                             </a>
                         </div>
                     </div>
@@ -634,17 +709,23 @@
         <div class="container">
             <h2 style="margin-bottom: 2rem;">Let's Connect</h2>
             <div class="social-links">
-                <a href="https://github.com/ryancasler" class="social-link" title="GitHub">
+                <a href="https://github.com/ryanrampage1" class="social-link" title="GitHub">
                     <i class="fa-brands fa-github"></i>
                 </a>
                 <a href="https://linkedin.com/in/ryancasler" class="social-link" title="LinkedIn">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="mailto:your.email@example.com" class="social-link" title="Email">
+                <a href="mailto:ryan.casler12@gmail.com" class="social-link" title="Email">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
-                <a href="https://twitter.com/ryancasler" class="social-link" title="Twitter/X">
+                <a href="https://x.com/ryancasler" class="social-link" title="Twitter/X">
                     <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://medium.com/@ryanrampage1" class="social-link" title="Medium">
+                    <i class="fa-brands fa-medium"></i>
+                </a>
+                <a href="https://speakerdeck.com/ryancasler" class="social-link" title="Speaker Deck">
+                    <i class="fa-brands fa-speaker-deck"></i>
                 </a>
             </div>
             <p style="color: rgba(255,255,255,0.5); font-size: 0.9rem;">
