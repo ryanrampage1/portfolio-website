@@ -530,75 +530,6 @@
         </div>
     </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Technical Arsenal</h2>
-            <p class="section-subtitle">Tools and technologies I use to bring apps to life.</p>
-
-            <div class="skills-category">
-                <h3 class="category-title">Android</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fa-solid fa-mobile-screen"></i>
-                        <h4>Mobile Development</h4>
-                    </div>
-                    <div class="skill-card">
-                        <svg viewBox="0 0 24 24"
-                            style="width: 2rem; height: 2rem; fill: var(--accent); margin-bottom: 10px;">
-                            <path d="M1.3 24l11.3-11.5L24 24zM0 0h12L0 12.5zM13.4 0L0 14v10l12-12L24 0z" />
-                        </svg>
-                        <h4>Kotlin</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fa-solid fa-layer-group"></i>
-                        <h4>Jetpack Compose</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fa-solid fa-database"></i>
-                        <h4>Room / SQL</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fa-solid fa-layer-group"></i>
-                        <h4>Clean Architecture</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fa-solid fa-arrows-rotate"></i>
-                        <h4>MVVM</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skills-category">
-                <h3 class="category-title">iOS</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fa-brands fa-swift"></i>
-                        <h4>Swift</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fa-solid fa-cubes"></i>
-                        <h4>The Composable Architecture</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skills-category">
-                <h3 class="category-title">Other Skills</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fa-brands fa-git-alt"></i>
-                        <h4>Git & CI/CD</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fa-solid fa-circle-play"></i>
-                        <h4>GitHub Actions</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- PROJECTS SECTION -->
     <section id="projects" class="section" style="background-color: var(--bg-surface);">
         <div class="container">
@@ -785,6 +716,169 @@
         </div>
     </section>
 
+    <!-- WRITING & SPEAKING SECTION -->
+    <section id="writing" class="section">
+        <div class="container">
+            <h2 class="section-title">Writing & Speaking</h2>
+            <p class="section-subtitle">Articles, talks, and presentations on software development.</p>
+
+            <div class="projects-grid">
+                <!-- Medium Article 1 -->
+                <article class="project-card">
+                    <div class="card-image-wrapper">
+                        <i class="fa-brands fa-medium" style="font-size: 5rem; color: #00ab6c;"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Batch Light</h3>
+                            <span class="project-type">Article</span>
+                        </div>
+                        <p class="project-desc">
+                            A deep dive into building a Kotlin library for efficient batch inserting into SQLite on
+                            Android.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Android</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://medium.com/yello-offline/batch-light-50f935625a2b"
+                                class="card-btn btn-demo" target="_blank">
+                                <i class="fa-brands fa-medium"></i> Read Article
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Medium Article 2 -->
+                <article class="project-card">
+                    <div class="card-image-wrapper">
+                        <i class="fa-brands fa-medium" style="font-size: 5rem; color: #00ab6c;"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Building Faster SQLite Inserts</h3>
+                            <span class="project-type">Article</span>
+                        </div>
+                        <p class="project-desc">
+                            Techniques and best practices for optimizing SQLite insert performance in Android
+                            applications.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Performance</span>
+                            <span class="tech-tag">Android</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://medium.com/yello-offline/building-faster-sqlite-inserts-e732c21bfcfa"
+                                class="card-btn btn-demo" target="_blank">
+                                <i class="fa-brands fa-medium"></i> Read Article
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Speaker Deck Presentation -->
+                <article class="project-card">
+                    <div class="card-image-wrapper">
+                        <i class="fa-brands fa-speaker-deck" style="font-size: 5rem; color: #009287;"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="project-header">
+                            <h3 class="project-title">Kotlin: Function Literals with Receiver</h3>
+                            <span class="project-type">Talk</span>
+                        </div>
+                        <p class="project-desc">
+                            Conference presentation exploring Kotlin's function literals with receiver and their
+                            practical applications in DSL design.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">DSL</span>
+                            <span class="tech-tag">Advanced</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="https://speakerdeck.com/ryancasler/kotlin-function-literals-with-receiver"
+                                class="card-btn btn-demo" target="_blank">
+                                <i class="fa-brands fa-speaker-deck"></i> View Slides
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section" style="background-color: var(--bg-surface);">
+        <div class="container">
+            <h2 class="section-title">Technical Arsenal</h2>
+            <p class="section-subtitle">Tools and technologies I use to bring apps to life.</p>
+
+            <div class="skills-category">
+                <h3 class="category-title">Android</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <h4>Mobile Development</h4>
+                    </div>
+                    <div class="skill-card">
+                        <svg viewBox="0 0 24 24"
+                            style="width: 2rem; height: 2rem; fill: var(--accent); margin-bottom: 10px;">
+                            <path d="M1.3 24l11.3-11.5L24 24zM0 0h12L0 12.5zM13.4 0L0 14v10l12-12L24 0z" />
+                        </svg>
+                        <h4>Kotlin</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h4>Jetpack Compose</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-database"></i>
+                        <h4>Room / SQL</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h4>Clean Architecture</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <h4>MVVM</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="category-title">iOS</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-swift"></i>
+                        <h4>Swift</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-cubes"></i>
+                        <h4>The Composable Architecture</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="category-title">Other Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <h4>Git & CI/CD</h4>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <h4>GitHub Actions</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CONTACT / FOOTER -->
     <footer id="contact">
         <div class="container">
@@ -800,7 +894,7 @@
                     <i class="fa-solid fa-envelope"></i>
                 </a>
                 <a href="https://x.com/ryancasler" class="social-link" title="Twitter/X">
-                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-twitter"></i>
                 </a>
                 <a href="https://medium.com/@ryanrampage1" class="social-link" title="Medium">
                     <i class="fa-brands fa-medium"></i>
