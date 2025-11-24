@@ -274,6 +274,18 @@
             gap: 2.5rem;
         }
 
+        /* --- UTILITIES --- */
+        .stretched-link::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            content: "";
+        }
+
+        /* Ensure cards are relative for the stretched link to work */
         .project-card {
             background: #fff;
             border-radius: var(--radius);
@@ -283,6 +295,8 @@
             display: flex;
             flex-direction: column;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            /* Added for stretched-link */
         }
 
         .project-card:hover {
@@ -557,7 +571,7 @@
                             <span class="tech-tag">Sports</span>
                         </div>
                         <div class="card-links">
-                            <a href="https://6ats.app/" class="card-btn btn-demo" target="_blank">
+                            <a href="https://6ats.app/" class="card-btn btn-demo stretched-link" target="_blank">
                                 <i class="fa-solid fa-globe"></i> Visit Site
                             </a>
                         </div>
@@ -586,7 +600,7 @@
                             <span class="tech-tag">Responsive Design</span>
                         </div>
                         <div class="card-links">
-                            <a href="https://taylormoton.com" class="card-btn btn-demo" target="_blank">
+                            <a href="https://taylormoton.com" class="card-btn btn-demo stretched-link" target="_blank">
                                 <i class="fa-solid fa-globe"></i> Visit Site
                             </a>
                         </div>
@@ -615,7 +629,8 @@
                             <span class="tech-tag">Design</span>
                         </div>
                         <div class="card-links">
-                            <a href="https://softgoodsmfg.com/" class="card-btn btn-demo" target="_blank">
+                            <a href="https://softgoodsmfg.com/" class="card-btn btn-demo stretched-link"
+                                target="_blank">
                                 <i class="fa-solid fa-globe"></i> Visit Site
                             </a>
                         </div>
@@ -643,8 +658,8 @@
                             <span class="tech-tag">Android</span>
                         </div>
                         <div class="card-links">
-                            <a href="https://github.com/ryanrampage1/Batchlight" class="card-btn btn-code"
-                                target="_blank">
+                            <a href="https://github.com/ryanrampage1/Batchlight"
+                                class="card-btn btn-code stretched-link" target="_blank">
                                 <i class="fa-brands fa-github"></i> View Code
                             </a>
                         </div>
@@ -674,7 +689,7 @@
                         </div>
                         <div class="card-links">
                             <a href="https://play.google.com/store/apps/details?id=com.tovala.app"
-                                class="card-btn btn-demo" target="_blank">
+                                class="card-btn btn-demo stretched-link" target="_blank">
                                 <i class="fa-brands fa-google-play"></i> Play Store
                             </a>
                         </div>
@@ -703,8 +718,8 @@
                             <span class="tech-tag">IoT</span>
                         </div>
                         <div class="card-links">
-                            <a href="https://apps.apple.com/us/app/tovala/id1061401391" class="card-btn btn-demo"
-                                target="_blank">
+                            <a href="https://apps.apple.com/us/app/tovala/id1061401391"
+                                class="card-btn btn-demo stretched-link" target="_blank">
                                 <i class="fa-brands fa-app-store"></i> App Store
                             </a>
                         </div>
@@ -744,7 +759,7 @@
                         </div>
                         <div class="card-links">
                             <a href="https://medium.com/yello-offline/batch-light-50f935625a2b"
-                                class="card-btn btn-demo" target="_blank">
+                                class="card-btn btn-demo stretched-link" target="_blank">
                                 <i class="fa-brands fa-medium"></i> Read Article
                             </a>
                         </div>
@@ -772,7 +787,7 @@
                         </div>
                         <div class="card-links">
                             <a href="https://medium.com/yello-offline/building-faster-sqlite-inserts-e732c21bfcfa"
-                                class="card-btn btn-demo" target="_blank">
+                                class="card-btn btn-demo stretched-link" target="_blank">
                                 <i class="fa-brands fa-medium"></i> Read Article
                             </a>
                         </div>
@@ -800,7 +815,7 @@
                         </div>
                         <div class="card-links">
                             <a href="https://speakerdeck.com/ryancasler/kotlin-function-literals-with-receiver"
-                                class="card-btn btn-demo" target="_blank">
+                                class="card-btn btn-demo stretched-link" target="_blank">
                                 <i class="fa-brands fa-speaker-deck"></i> View Slides
                             </a>
                         </div>
