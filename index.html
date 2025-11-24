@@ -233,7 +233,7 @@
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             gap: 1.5rem;
         }
 
@@ -243,28 +243,148 @@
             border-radius: var(--radius);
             text-align: center;
             border: 1px solid var(--border);
-            transition: 0.2s;
-            /* Ensure consistent height and centering */
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .skill-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
         }
 
         .skill-card:hover {
-            border-color: var(--primary);
-            transform: translateY(-3px);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+            border-color: transparent;
         }
 
-        .skill-card i {
-            font-size: 2rem;
-            color: var(--accent);
-            margin-bottom: 10px;
+        .skill-card:hover::before {
+            opacity: 1;
+        }
+
+        .skill-card i,
+        .skill-card svg {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            color: var(--text-muted);
+            /* Default color */
+        }
+
+        .skill-card:hover i,
+        .skill-card:hover svg {
+            transform: scale(1.1) rotate(5deg);
         }
 
         .skill-card h4 {
             font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-main);
+            transition: color 0.2s;
+        }
+
+        /* Brand Colors */
+        .skill-android:hover {
+            border-color: #3DDC84;
+            background: rgba(61, 220, 132, 0.05);
+        }
+
+        .skill-android:hover i,
+        .skill-android:hover svg {
+            color: #3DDC84;
+            fill: #3DDC84;
+        }
+
+        .skill-kotlin:hover {
+            border-color: #7F52FF;
+            background: rgba(127, 82, 255, 0.05);
+        }
+
+        .skill-kotlin:hover i,
+        .skill-kotlin:hover svg {
+            color: #7F52FF;
+            fill: #7F52FF;
+        }
+
+        .skill-compose:hover {
+            border-color: #4285F4;
+            background: rgba(66, 133, 244, 0.05);
+        }
+
+        .skill-compose:hover i,
+        .skill-compose:hover svg {
+            color: #4285F4;
+            fill: #4285F4;
+        }
+
+        .skill-swift:hover {
+            border-color: #F05138;
+            background: rgba(240, 81, 56, 0.05);
+        }
+
+        .skill-swift:hover i,
+        .skill-swift:hover svg {
+            color: #F05138;
+            fill: #F05138;
+        }
+
+        .skill-git:hover {
+            border-color: #F05032;
+            background: rgba(240, 80, 50, 0.05);
+        }
+
+        .skill-git:hover i,
+        .skill-git:hover svg {
+            color: #F05032;
+            fill: #F05032;
+        }
+
+        .skill-github:hover {
+            border-color: #181717;
+            background: rgba(24, 23, 23, 0.05);
+        }
+
+        .skill-github:hover i,
+        .skill-github:hover svg {
+            color: #181717;
+            fill: #181717;
+        }
+
+        .skill-db:hover {
+            border-color: #003B57;
+            background: rgba(0, 59, 87, 0.05);
+        }
+
+        .skill-db:hover i,
+        .skill-db:hover svg {
+            color: #003B57;
+            fill: #003B57;
+        }
+
+        .skill-arch:hover {
+            border-color: #073042;
+            background: rgba(7, 48, 66, 0.05);
+        }
+
+        .skill-arch:hover i,
+        .skill-arch:hover svg {
+            color: #073042;
+            fill: #073042;
         }
 
         /* --- PROJECTS SECTION (The "Revamped" Component) --- */
@@ -834,30 +954,30 @@
             <div class="skills-category">
                 <h3 class="category-title">Android</h3>
                 <div class="skills-grid">
-                    <div class="skill-card">
+                    <div class="skill-card skill-android">
                         <i class="fa-solid fa-mobile-screen"></i>
                         <h4>Mobile Development</h4>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card skill-kotlin">
                         <svg viewBox="0 0 24 24"
-                            style="width: 2rem; height: 2rem; fill: var(--accent); margin-bottom: 10px;">
+                            style="width: 2.5rem; height: 2.5rem; fill: var(--text-muted); margin-bottom: 15px; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);">
                             <path d="M1.3 24l11.3-11.5L24 24zM0 0h12L0 12.5zM13.4 0L0 14v10l12-12L24 0z" />
                         </svg>
                         <h4>Kotlin</h4>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card skill-compose">
                         <i class="fa-solid fa-layer-group"></i>
                         <h4>Jetpack Compose</h4>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card skill-db">
                         <i class="fa-solid fa-database"></i>
                         <h4>Room / SQL</h4>
                     </div>
-                    <div class="skill-card">
-                        <i class="fa-solid fa-layer-group"></i>
+                    <div class="skill-card skill-arch">
+                        <i class="fa-solid fa-sitemap"></i>
                         <h4>Clean Architecture</h4>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card skill-arch">
                         <i class="fa-solid fa-arrows-rotate"></i>
                         <h4>MVVM</h4>
                     </div>
@@ -867,11 +987,11 @@
             <div class="skills-category">
                 <h3 class="category-title">iOS</h3>
                 <div class="skills-grid">
-                    <div class="skill-card">
+                    <div class="skill-card skill-swift">
                         <i class="fa-brands fa-swift"></i>
                         <h4>Swift</h4>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card skill-swift">
                         <i class="fa-solid fa-cubes"></i>
                         <h4>The Composable Architecture</h4>
                     </div>
@@ -881,11 +1001,11 @@
             <div class="skills-category">
                 <h3 class="category-title">Other Skills</h3>
                 <div class="skills-grid">
-                    <div class="skill-card">
+                    <div class="skill-card skill-git">
                         <i class="fa-brands fa-git-alt"></i>
                         <h4>Git & CI/CD</h4>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card skill-github">
                         <i class="fa-solid fa-circle-play"></i>
                         <h4>GitHub Actions</h4>
                     </div>
